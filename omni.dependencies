@@ -1,0 +1,8 @@
+[
+  {
+    "remote":"github",
+    "repository": "hsj51/android_kernel_lenovo_msm8916",
+    "target_path": "kernel/lenovo/msm8916",
+    "revision": "lineage-16.0-rebase"
+  }
+]
