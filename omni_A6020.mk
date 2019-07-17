@@ -41,3 +41,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.product.model=A6020
 
 ALLOW_MISSING_DEPENDENCIES := true
+
+# Explicitly
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8916
