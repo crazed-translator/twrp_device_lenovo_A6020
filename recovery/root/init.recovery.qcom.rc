@@ -9,8 +9,6 @@ on fs
     symlink /dev/block/platform/soc.0/${ro.boot.bootdevice} /dev/block/bootdevice
 
 on init
-
-on init
     mkdir /vendor/firmware
     mkdir /vendor/firmware/keymaster
     symlink /firmware/image/keymaster.b00 /vendor/firmware/keymaster/keymaster.b00
