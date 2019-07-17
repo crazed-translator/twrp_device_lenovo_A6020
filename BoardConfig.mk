@@ -69,6 +69,7 @@ RECOVERY_GRAPHICS_USE_LINELENGTH := true
 RECOVERY_SDCARD_ON_DATA := true
 
 # TWRP specific build flags
+TW_SCREEN_BLANK_ON_BOOT := true
 TW_THEME := portrait_hdpi
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_DEFAULT_BRIGHTNESS := 120
@@ -77,6 +78,8 @@ TW_INCLUDE_NTFS_3G := true
 TW_IGNORE_MISC_WIPE_DATA := true
 TW_NEW_ION_HEAP := true
 TW_USE_TOOLBOX := true
+TWRP_INCLUDE_LOGCAT := true
+BOARD_SUPPRESS_SECURE_ERASE := true
 
 # Encryption support
 TW_INCLUDE_CRYPTO := false
@@ -86,3 +89,12 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # Asian region languages
 TW_EXTRA_LANGUAGES := true
+
+# Disable Mouse Cursor
+TW_INPUT_BLACKLIST := "hbtp_vm"
+
+# exFAT FS Support
+TW_INCLUDE_FUSE_EXFAT := true
+
+# NTFS Support
+TW_INCLUDE_FUSE_NTFS := true
